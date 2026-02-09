@@ -149,7 +149,7 @@ export default function Navigation() {
                                 className="flex items-center gap-6 mt-8"
                             >
                                 <a
-                                    href="https://instagram.com"
+                                    href="https://instagram.com/raveen_tharuka"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-smoke hover:text-cream transition-colors"
@@ -163,7 +163,7 @@ export default function Navigation() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="https://youtube.com"
+                                    href="https://youtube.com/channel/UCfKt0Jocj9QLVn9Ncre_Nog"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-smoke hover:text-cream transition-colors"
@@ -177,7 +177,7 @@ export default function Navigation() {
                                     </svg>
                                 </a>
                                 <a
-                                    href="https://spotify.com"
+                                    href="https://open.spotify.com/artist/0vdkqzGVuWnwD3JWI8ZPT8"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-smoke hover:text-cream transition-colors"

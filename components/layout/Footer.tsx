@@ -11,7 +11,7 @@ const footerLinks = {
     ],
     social: [
         {
-            href: "https://instagram.com/raveentharuka",
+            href: "https://instagram.com/raveen_tharuka",
             label: "Instagram",
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -20,7 +20,7 @@ const footerLinks = {
             ),
         },
         {
-            href: "https://youtube.com/@raveentharuka",
+            href: "https://youtube.com/channel/UCfKt0Jocj9QLVn9Ncre_Nog",
             label: "YouTube",
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -29,7 +29,7 @@ const footerLinks = {
             ),
         },
         {
-            href: "https://open.spotify.com/artist/raveentharuka",
+            href: "https://open.spotify.com/artist/0vdkqzGVuWnwD3JWI8ZPT8",
             label: "Spotify",
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -38,7 +38,7 @@ const footerLinks = {
             ),
         },
         {
-            href: "https://facebook.com/raveentharuka",
+            href: "https://facebook.com/Raveentharukamusic",
             label: "Facebook",
             icon: (
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
