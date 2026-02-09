@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================================
+   RAVEEN THARUKA OFFICIAL WEBSITE
+   Global Styles - Cinematic Black & White
+   with Luxury Motion Tuning
+   ======================================== */
+
+/* Base Styles */
+@layer base {
+  * {
+    @apply antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-charcoal text-cream font-body;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    @apply bg-cream/20 text-cream;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-charcoal-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-smoke-dark rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-smoke;
+  }
+}
+
+/* Component Utilities */
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 md:px-8 lg:px-12;
+  }
+
+  .section-padding {
+    @apply py-20 md:py-28 lg:py-32;
+  }
+
+  .heading-display {
+    @apply font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight;
+  }
+
+  .heading-section {
+    @apply font-heading text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight;
+  }
+
+  .text-body {
+    @apply font-body text-base md:text-lg text-smoke-light leading-relaxed;
+  }
+
+  .text-caption {
+    @apply font-body text-sm text-smoke uppercase tracking-widest;
+  }
+
+  /* Cinematic Button Styles with Luxury Easing */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-cream text-charcoal font-medium text-sm uppercase tracking-widest border border-cream transition-all duration-500 ease-luxury hover:bg-transparent hover:text-cream focus:outline-none focus:ring-2 focus:ring-cream/30 focus:ring-offset-2 focus:ring-offset-charcoal;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-8 py-4 bg-transparent text-cream font-medium text-sm uppercase tracking-widest border border-cream/40 transition-all duration-500 ease-luxury hover:bg-cream/10 hover:border-cream focus:outline-none focus:ring-2 focus:ring-cream/30 focus:ring-offset-2 focus:ring-offset-charcoal;
+  }
+
+  /* Card Styles with Luxury Motion */
+  .card-base {
+    @apply bg-charcoal-light border border-smoke-dark/20 rounded-sm transition-all duration-600 ease-luxury;
+  }
+
+  .card-hover {
+    @apply hover:border-smoke-dark/40 hover:bg-charcoal-muted;
+  }
+
+  /* Luxury Hover Effect */
+  .luxury-hover {
+    @apply transition-all duration-600 ease-luxury;
+  }
+  
+  .luxury-hover:hover {
+    @apply transform scale-[1.02];
+  }
+
+  /* Input Styles */
+  .input-field {
+    @apply w-full bg-charcoal-light border border-smoke-dark/30 rounded-sm px-4 py-3.5 text-cream placeholder:text-smoke-dark transition-all duration-400 ease-luxury focus:outline-none focus:border-smoke focus:bg-charcoal-muted focus:ring-2 focus:ring-smoke/10;
+  }
+
+  .select-field {
+    @apply input-field appearance-none cursor-pointer bg-no-repeat pr-10;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%239A9A9A'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 20px;
+    background-position: right 12px center;
+  }
+
+  .label-field {
+    @apply block text-sm text-smoke-light mb-2 font-medium tracking-wide;
+  }
+}
+
+/* Luxury Motion Utilities */
+@layer utilities {
+  /* Smooth Transform Origin */
+  .transform-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  /* Luxury Shadow Glow */
+  .luxury-glow {
+    box-shadow: 0 0 40px rgba(245, 245, 245, 0.05);
+  }
+
+  .luxury-glow:hover {
+    box-shadow: 0 0 60px rgba(245, 245, 245, 0.1);
+  }
+
+  /* Stagger Animation Delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
+
+/* Grain Overlay Effect */
+.grain-overlay {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200%;
+  background: transparent url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E") repeat;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+  animation: grain 8s steps(10) infinite;
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Spotify/YouTube Embed Styling */
+.embed-container {
+  @apply relative overflow-hidden rounded-sm;
+}
+
+.embed-container iframe {
+  @apply w-full;
+}
+
+/* Gallery Image Treatment with Luxury Transition */
+.gallery-image {
+  @apply grayscale brightness-90 transition-all duration-700 ease-luxury;
+  filter: grayscale(100%) brightness(0.9) contrast(1.05);
+}
+
+.gallery-image:hover {
+  filter: grayscale(0) brightness(1) contrast(1);
+}
+
+/* Fade Mask for Text Overflow */
+.fade-mask-right {
+  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+}
+
+/* Underline Animation with Luxury Easing */
+.link-underline {
+  @apply relative;
+}
+
+.link-underline::after {
+  content: "";
+  @apply absolute bottom-0 left-0 w-0 h-px bg-cream transition-all duration-500 ease-luxury;
+}
+
+.link-underline:hover::after {
+  @apply w-full;
+}
+
+/* Smooth Reveal Animation */
+@keyframes smoothReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.smooth-reveal {
+  animation: smoothReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Parallax Scroll Optimization */
+.parallax-layer {
+  will-change: transform;
+  transform: translateZ(0);
+}
