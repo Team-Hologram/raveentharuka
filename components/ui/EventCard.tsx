@@ -34,7 +34,7 @@ export default function EventCard({ event, index = 0 }: EventCardProps) {
                             src={event.image}
                             alt={event.venue}
                             fill
-                            className="object-cover gallery-image group-hover:scale-110 transition-transform duration-700 ease-out"
+                            className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                         />
                     ) : (
                         <div className="absolute inset-0 bg-gradient-to-br from-charcoal-light via-charcoal-muted to-charcoal-dark" />
