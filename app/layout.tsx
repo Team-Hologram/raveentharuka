@@ -1,18 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 
-const inter = Inter({
+const montserrat = Montserrat({
     subsets: ["latin"],
-    variable: "--font-inter",
-    display: "swap",
-});
-
-const playfair = Playfair_Display({
-    subsets: ["latin"],
-    variable: "--font-playfair",
+    variable: "--font-montserrat",
     display: "swap",
 });
 
@@ -75,7 +69,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+        <html lang="en" className={montserrat.variable}>
             <body className="min-h-screen bg-charcoal">
                 {/* Grain Overlay for Cinematic Effect */}
                 <div className="grain-overlay" aria-hidden="true" />

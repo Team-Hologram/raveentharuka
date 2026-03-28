@@ -33,8 +33,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["var(--font-playfair)", "serif"],
-        body: ["var(--font-inter)", "sans-serif"],
+        heading: ["var(--font-montserrat)", "sans-serif"],
+        body: ["var(--font-montserrat)", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
